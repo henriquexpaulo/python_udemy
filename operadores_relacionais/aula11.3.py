@@ -1,8 +1,5 @@
 #acesso ao um portao de um predio
 
-from time import pthread_getcpuclockid
-
-
 ap = input("Digite sua senha do ap: ")
 morador = input("Seu nome: ")
 
