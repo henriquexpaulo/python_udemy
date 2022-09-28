@@ -22,3 +22,4 @@ if idade >= idade_menor and idade <= idade_maior:
     print(f"{nome} pode pegar o emprestimo")
 else:
     print(f"{nome} nao pode pegar o emprestimo")
+    

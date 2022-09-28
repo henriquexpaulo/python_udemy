@@ -1,3 +1,6 @@
+from unittest import case
+
+
 usuario = input("Nome de usuário: ")
 senha = input("Senha do usuário: ")
 

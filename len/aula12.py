@@ -1,9 +1,11 @@
 #len= define um limete de caracteres, nao funciona em float e int
 
-usuario = input("Digite seu usuário: ")
-qtd_caracteres = len(usuario)
+usuario = input("Digite seu nome: ")
+tamanho = len(usuario)
 
-if qtd_caracteres < 6:
-    print("voce precisa digitar pelo menos 6 caracteres")
+print(f"seu nome tem o total de letras é {tamanho}")
+
+if tamanho >= 6:
+    print("seu usuario foi cadastrado")
 else:
-    print("Voce foi cadastrado no sistema")
+    print("letras insuficiente para o cadastramento")
