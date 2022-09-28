@@ -1,20 +1,22 @@
 """Faça um programa que liste para o usuário um menu
-com quatro opções, sendo cadauma referente à uma operação matemática básica.
-Após o usuário ter escolhido aopção, leia dois valores e realiza a operação selecionada.
+com quatro opções, sendo cada uma referente à uma operação matemática básica.
+Após o usuário ter escolhido a opção, leia dois valores e realiza a operação selecionada. # noqa: E501
 """
+
 while True:
 
     print("")
-    print("-------calculadora--------")
-    print("---operadores matematico---")
+    print("-------Calculadora--------")
+    print("---Operadores matematicos---")
     print("")
-    print("uma calculadora operadores de +, -, *, /")
+    print("Operadores de Soma, Subtracao, Multiplicacao, Divisao.")
     print("")
-    print("digite 1 pra +")
-    print("digite 2 pra -")
-    print("digite 3 pra *")
-    print("digite 4 pra /")
-    print("")
+    print("""
+    Digite 1 pra Soma(+)
+    Digite 2 pra Subtracao(-)
+    Digite 3 pra Multiplicacao(*)
+    Digite 4 pra Divisao(/)
+    """)
 
     operadormat = int(input("Digite uma opçao: "))
 
@@ -22,13 +24,17 @@ while True:
     valor2 = float(input("Digite o segundo valor: "))
     print("")
 
-    if operadormat == 1:    
-        print(f"{valor1} + {valor2} = {valor1 + valor2}")
+    if operadormat == 1:
+        print(f"Valores {valor1} + {valor2} = {valor1 + valor2}")
+        break
     elif operadormat == 2:
-        print(f"{valor1} - {valor2} = {valor1 - valor2}")
+        print(f"Valores {valor1} - {valor2} = {valor1 - valor2}")
+        break
     elif operadormat == 3:
-        print(f"{valor1} * {valor2} = {valor1 * valor2}")
+        print(f"Valores {valor1} * {valor2} = {valor1 * valor2}")
+        break
     elif operadormat == 4:
-        print(f"{valor1} / {valor2} = {valor1 / valor2:.2f}")
-    else: 
-        print("Opçao invalida")
+        print(f"Valores {valor1} / {valor2} = {valor1 / valor2:.2f}")
+        break
+    else:
+        print("Opçao invalida, tente novamente!")
